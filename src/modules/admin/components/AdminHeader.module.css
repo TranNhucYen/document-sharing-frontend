@@ -1,0 +1,15 @@
+.headerContainer {
+  background-color: rgb(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--mantine-color-gray-2) !important;
+  box-shadow: var(--mantine-shadow-xs) !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease !important;
+}
+
+:global([data-mantine-color-scheme="dark"]) .headerContainer {
+  background-color: rgb(26, 27, 30, 0.8) !important;
+  border-bottom: 1px solid var(--mantine-color-dark-4) !important;
+  box-shadow: 0 4px 20px rgb(0, 0, 0, 0.25) !important;
+}
+
+

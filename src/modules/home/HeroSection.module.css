@@ -1,0 +1,35 @@
+.heroWrapper {
+  background-color: var(--mantine-color-brand-0);
+  transition: background-color 0.2s ease;
+}
+
+:global([data-mantine-color-scheme="dark"]) .heroWrapper {
+  background-color: var(--mantine-color-brand-9);
+}
+
+.heroSearchGroup {
+  background-color: var(--mantine-color-white);
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgb(0, 0, 0, 0.05), 0 0 0 1px var(--mantine-color-gray-2);
+  transition: all 0.2s ease;
+}
+
+.heroSearchGroup:focus-within {
+  box-shadow: 0 4px 20px rgb(35, 39, 47, 0.1), 0 0 0 2px var(--mantine-color-brand-6);
+}
+
+:global([data-mantine-color-scheme="dark"]) .heroSearchGroup {
+  box-shadow: 0 4px 20px rgb(0, 0, 0, 0.3), 0 0 0 1px var(--mantine-color-dark-4);
+}
+
+:global([data-mantine-color-scheme="dark"]) .heroSearchGroup:focus-within {
+  box-shadow: 0 4px 25px rgb(0, 0, 0, 0.4), 0 0 0 2px var(--mantine-color-brand-3);
+}
+
+.heroDescription {
+  color: var(--mantine-color-gray-7);
+}
+
+:global([data-mantine-color-scheme="dark"]) .heroDescription {
+  color: var(--mantine-color-dark-1);
+}

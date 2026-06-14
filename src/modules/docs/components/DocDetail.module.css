@@ -1,0 +1,36 @@
+.carouselContainer {
+  background-color: var(--mantine-color-gray-1);
+  transition: background-color 0.2s ease;
+}
+
+:global([data-mantine-color-scheme="dark"]) .carouselContainer {
+  background-color: var(--mantine-color-dark-8);
+}
+
+.carouselSlidePaper {
+  background-color: var(--mantine-color-white);
+  transition: background-color 0.2s ease;
+}
+
+:global([data-mantine-color-scheme="dark"]) .carouselSlidePaper {
+  background-color: var(--mantine-color-dark-6);
+}
+
+.ratingPaper {
+  background-color: var(--mantine-color-gray-0);
+  transition: background-color 0.2s ease;
+}
+
+:global([data-mantine-color-scheme="dark"]) .ratingPaper {
+  background-color: var(--mantine-color-dark-7);
+}
+
+.interactiveStar {
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.interactiveStar:hover {
+  color: var(--mantine-color-yellow-5);
+  transform: scale(1.15);
+}
