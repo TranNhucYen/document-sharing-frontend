@@ -1,0 +1,46 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom Selection Styles */
+::selection {
+  background-color: var(--mantine-color-brand-1);
+  color: var(--mantine-color-brand-9);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mantine-color-gray-3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mantine-color-gray-5);
+}
+
+/* Dark mode specific scrollbar */
+[data-mantine-color-scheme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--mantine-color-dark-4);
+}
+
+[data-mantine-color-scheme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--mantine-color-dark-3);
+}
+
+
+
+
+
+
+
+
