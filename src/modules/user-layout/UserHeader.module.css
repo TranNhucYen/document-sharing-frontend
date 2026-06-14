@@ -1,0 +1,82 @@
+.headerContainer {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgb(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--mantine-color-gray-2);
+  box-shadow: var(--mantine-shadow-xs);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+:global([data-mantine-color-scheme="dark"]) .headerContainer {
+  background-color: rgb(26, 27, 30, 0.8);
+  border-bottom: 1px solid var(--mantine-color-dark-4);
+  box-shadow: 0 4px 20px rgb(0, 0, 0, 0.25);
+}
+
+.logoText {
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: var(--mantine-color-text);
+  transition: opacity 0.2s ease;
+}
+
+.logoText:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.logoBadge {
+  color: var(--mantine-color-white);
+  background-color: var(--mantine-color-brand-6);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.8em;
+  font-weight: 700;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+:global([data-mantine-color-scheme="dark"]) .logoBadge {
+  color: var(--mantine-color-black);
+  background-color: var(--mantine-color-brand-2);
+}
+
+.navLink {
+  position: relative;
+  white-space: nowrap;
+  color: var(--mantine-color-dimmed);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: var(--mantine-color-text);
+  text-decoration: none;
+}
+
+:global([data-mantine-color-scheme="dark"]) .navLink:hover {
+  background-color: var(--mantine-color-dark-6);
+}
+
+.navLink.active {
+  color: var(--mantine-color-brand-6);
+  font-weight: 600;
+  /* background-color: var(--mantine-color-brand-0); */
+}
+
+/* :global([data-mantine-color-scheme="dark"]) .navLink.active {
+  color: var(--mantine-color-brand-1);
+  background-color: var(--mantine-color-brand-9);
+}
+ */
